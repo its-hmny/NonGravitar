@@ -156,6 +156,3 @@ bool gameOver() {
 	currentSolarSystemNumber = 0;
 	return(userChoice);
 }
-
-// Per eseguire il programma: CTRL+F5 oppure Debug > Avvia senza eseguire debug
-// Per eseguire il debug del programma: F5 oppure Debug > Avvia debug
