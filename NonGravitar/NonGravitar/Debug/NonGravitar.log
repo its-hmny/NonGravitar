@@ -1,0 +1,3 @@
+﻿  SolarSystem.cpp
+C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\SolarSystem.cpp(22): warning C4244: 'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+  NonGravitar.vcxproj -> C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\Debug\NonGravitar.exe
