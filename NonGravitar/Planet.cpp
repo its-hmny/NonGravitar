@@ -15,8 +15,8 @@ Planet::Planet(int level) : SolarSystem(true, 0, 0) {
 	putOnCanvas(toList1, toList2);
 }
 
+//Create the "hill" and the "plane" parts of the planet's surface
 void Planet::setupSurface(int level) {
-	srand(time(NULL));
 	int hPart = (rand() % 10) + 13 - level;
 	int parz = 0;
 	int i = 1;
@@ -270,7 +270,7 @@ p_bunkerList2 Planet::checkIfDestroyedBunker2(p_bunkerList2 current) {
 	else return(NULL);
 }
 
-//SIMONE IO NON SO COSA FANNO LE TUE FUNZIONI
+//Check that there's no asterisk on the window frame
 bool Planet::elementInRow(int y) {
 	return(canvas[y][0] == '*');
 }

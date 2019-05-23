@@ -11,7 +11,7 @@ using namespace std;
 
 SolarSystem::SolarSystem(bool a, int difficultyLevel, int planetToDo) {
 	allPlanetDestroyed = a;
-	initializeSurface();
+	createFrame();
 	head = NULL;
 	initializeList(planetToDo, difficultyLevel);
 	printPlanetsOnCanvas();
@@ -19,7 +19,6 @@ SolarSystem::SolarSystem(bool a, int difficultyLevel, int planetToDo) {
 
 //This method initializes all the nodes, which contains the Planet pointer and other values
 void SolarSystem::initializeList(int planetToDo, int difficultyLevel) {
-	srand(time(NULL));
 	while (planetToDo > 0) {
 		p_list tmp1 = head, tmp2 = NULL;
 		if (head != NULL) {
@@ -65,11 +64,11 @@ void SolarSystem::printPlanetsOnCanvas() {
 	while (temp != NULL) {
 		temp->planetDestroyed = temp->currentPlanet->areAllDestroied();
 		if (temp->planetDestroyed == false) {
-			canvas[temp->y_coordinate][temp->x_coordinate] = 'O';	//Eventualmente possiamo usare la funzione changeCanvas per
-			temp = temp->next;										//stampare i valori, eventualmente dobbiamo cambiare la definizione
+			canvas[temp->y_coordinate][temp->x_coordinate] = 'O';
+			temp = temp->next;
 		}
 		else {
-			objectOnCanvas(temp->x_coordinate, temp->y_coordinate, ' '); //POTREBBE essere non richiesto
+			objectOnCanvas(temp->x_coordinate, temp->y_coordinate, ' ');
 			canvas[temp->y_coordinate][temp->x_coordinate] = 'x';
 			temp = temp->next;
 		}
@@ -115,7 +114,7 @@ void SolarSystem::updateCanvasView(p_game game) {
 }
 
 //Put on the canvas every type of object
-void SolarSystem::objectOnCanvas(int x, int y, char shape) {		//ritorna se la casella in cui si sta sostituendo la navicella ha un pianeta...
+void SolarSystem::objectOnCanvas(int x, int y, char shape) {
 	canvas[y][x] = shape;
 }
 
@@ -130,7 +129,7 @@ bool SolarSystem::checkAllPlanetDestroyed() {
 }
 
 //Create a frame at the edge and at the same time initializes every single cell of the matrix
-void SolarSystem::initializeSurface() {
+void SolarSystem::createFrame() {
 	for (int i = 0; i < 25; i++) {
 		for (int j = 0; j < 110; j++) {
 			if ((i == 24) || (i == 0) || (j == 0) || (j == 109)) {

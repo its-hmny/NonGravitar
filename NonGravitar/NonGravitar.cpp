@@ -145,6 +145,7 @@ void returnToPreviousSS() {
 	player->resetCoordinate(false, currentP);
 	currentSS = myGame->sendPointer(--currentSolarSystemNumber);
 }
+
 void gameOver() {
 	notFirstGame = myGame->gameOver();
 	system("CLS");

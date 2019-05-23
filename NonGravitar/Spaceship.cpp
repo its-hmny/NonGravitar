@@ -30,7 +30,7 @@ void Spaceship::resetCoordinate(bool option, p_planet currentP) {
 	}
 }
 
-//SIMONE SEMPRE TE CAZZO
+//This function takes care of updating the spaceship coordinate and also control the attraction ray
 void Spaceship::Move(p_planet currentP, p_game currentGame) {
 	//Move left
 	if ((GetAsyncKeyState(VK_LEFT)) && (x_position > 1)) {

@@ -1,2 +1,14 @@
-﻿  NonGravitar.cpp
+﻿  Bullets.cpp
+  Bunker.cpp
+  Bunker2.cpp
+  Game.cpp
+C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\Game.cpp(9,12): warning C4244:  'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+  NonGravitar.cpp
+  Planet.cpp
+C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\Game.cpp(154,27): warning C4129:  ' ': sequenza di caratteri di escape sconosciuta
+  SolarSystem.cpp
+  Spaceship.cpp
+  Generazione del codice in corso...
+C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\Planet.cpp(12,12): warning C4244:  'argomento': conversione da 'time_t' a 'unsigned int'. Possibile perdita di dati.
+C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\Planet.cpp(12,12): warning C4244: C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\NonGravitar\Spaceship.cpp(252) : warning C4715: 'Spaceship::returnPosition': non tutti i percorsi di controllo restituiscono un valore
   NonGravitar.vcxproj -> C:\Users\eneag\OneDrive\Desktop\Università\Programmazione\Progetto\NonGravitar\Debug\NonGravitar.exe

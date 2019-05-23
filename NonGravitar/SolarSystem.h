@@ -25,7 +25,7 @@ public:
 	void updateCanvasView(p_game game);
 	void objectOnCanvas(int x, int y, char shape);
 	bool checkAllPlanetDestroyed();
-	void initializeSurface();
+	void createFrame();
 	p_planet returnPlanetpointer(int x, int y);
 	bool objectOnCanvasToBool(int x, int y, char shape);
 	~SolarSystem();

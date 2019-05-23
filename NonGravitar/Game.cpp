@@ -96,8 +96,8 @@ void Game::setGameData(char title[110]) {
 }
 
 //The bool value determines if the int value should be added or subtracted, the second if checks a superior limitation of the value
-void Game::changeFuel(int changeToApply, bool plusORminus) {
-	if (plusORminus) {
+void Game::changeFuel(int changeToApply, bool isToAdd) {
+	if (isToAdd) {
 		if ((fuel + changeToApply) > 25) {
 			fuel = 25;
 		}

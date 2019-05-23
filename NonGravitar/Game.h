@@ -22,7 +22,7 @@ public:
 	p_solarSystem sendPointer(int number);
 	bool checkGameRunning();
 	void setGameData(char title[110]);
-	void changeFuel(int changeToApply, bool plus_minus);
+	void changeFuel(int changeToApply, bool isToAdd);
 	void startScreen(bool mustPrintScreen);
 	bool gameOver();
 	void pauseScreen();
